@@ -1,0 +1,260 @@
+/* global styles */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f6fa; /* light grey background matching prototype */
+  color: #333;
+}
+
+/* page container for consistent paddings */
+.page-container {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* utility helpers */
+.flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+
+
+/* card style used throughout the app */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.container {
+  padding: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.button {
+  background-color: #3366ff; /* primary student blue */
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.button.purple {
+  background-color: #8e44ad; /* admin purple */
+}
+
+.button:hover {
+  filter: brightness(0.95);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+input[type="text"],
+textarea,
+select,
+input[type="file"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input[type="file"] {
+  padding: 0.25rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height is handled by container padding */
+}
+
+/* Home page portal cards */
+.home-page h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.home-page .tagline {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.portal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.portal-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.portal-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.portal-card .portal-content {
+  padding: 1rem 1.5rem 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.portal-card .icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.portal-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.portal-card ul {
+  list-style: disc inside;
+  margin: 0 0 1rem;
+  color: #555;
+}
+.portal-card.admin .button {
+  width: 100%;
+}
+.portal-card.student .button {
+  width: 100%;
+}
+
+.demo-note {
+  text-align: center;
+  color: #999;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+
+.login-card {
+  width: 360px;
+  padding: 2rem 2.5rem;
+}
+
+.login-card h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.notfound {
+  text-align: center;
+  padding: 2rem;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+.dashboard-header p {
+  margin: 0.25rem 0 1.5rem;
+  color: #555;
+}
+
+.stats-cards .card {
+  text-align: center;
+}
+.stats-cards .stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.actions-cards .action-card .icon {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+.action-card {
+  display: flex;
+  align-items: center;
+}
+.action-card .icon {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}
+
+.recent-projects h2 {
+  margin-top: 2rem;
+}
+
+/* existing rules preserved */
+.dashboard-page h2,
+.project-form-page h2,
+.portfolio-page h2,
+.admin-dashboard-page h2 {
+  margin-top: 0;
+}
+
+.project-form-page .card {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+}
+.project-list .project-card {
+  margin: 0.5rem 0;
+}
+
+.portfolio-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.portfolio-header h2 {
+  margin: 0;
+}
+.portfolio-header p {
+  margin: 0.25rem 0;
+}
+
+.student-management .card {
+  padding: 1rem;
+}
+
+.student-management .card p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #444;
+}

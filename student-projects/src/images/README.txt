@@ -1,0 +1,1 @@
+Place the background image here and name it "background.jpg". This file will be referenced by CSS at build time.
